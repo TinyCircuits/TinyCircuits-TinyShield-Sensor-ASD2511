@@ -5,7 +5,7 @@ The design files are located in the design_files/ folder for the TinyCircuits AS
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
-For more infomation on this, check out the product pages for sensors at Tiny-Circuits.com:  https://tiny-circuits.com/
+For more infomation on this, check out the product pages for sensors at TinyCircuits.com: https://tinycircuits.com/collections/sensors/products/combo-sensor-tinyshield
 
 
 
