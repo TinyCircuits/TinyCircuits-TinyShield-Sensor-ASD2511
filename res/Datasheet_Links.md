@@ -8,3 +8,5 @@ BMP280: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP28
 
 TSL2572: http://ams.com/documents/20143/36005/TSL2572_DS000178_3-00.pdf/48392d43-48b1-e4cd-8272-40ab48727830
 
+BMA250: http://www1.futureelectronics.com/doc/BOSCH/BMA250-0273141121.pdf
+
