@@ -1,7 +1,7 @@
 # TinyCircuits TinyShield Sensor Board
 # ASD2511 Rev5
 
-These are the design files for the TinyCircuits ASD2511 Rev 5 PCB.  This is a TinyShield board (Square Version, 20mm x 20mm) that has multiple sensor ICs on it and can be built under different configurations based on the sensor needs.  This board includes a 3-axis accelerometer, 3-axis gyroscope, 3-axis compass, 9-axis IMU, barometric pressure, temperature / humidity sensor, & ambient light sensor.  
+The design files are located in the design_files/ folder for the TinyCircuits ASD2511 Rev 5 PCB.  This is a TinyShield board (Square Version, 20mm x 20mm) that has multiple sensor ICs on it and can be built under different configurations based on the sensor needs.  This board includes a 3-axis accelerometer, 3-axis gyroscope, 3-axis compass, 9-axis IMU, barometric pressure, temperature / humidity sensor, & ambient light sensor.  
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
