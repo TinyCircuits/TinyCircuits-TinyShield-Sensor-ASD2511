@@ -1,8 +1,8 @@
-## Datasheets
+## Datasheet Links
 
 LSM9DS1: https://www.st.com/resource/en/datasheet/lsm9ds1.pdf
 
-Si7020: https://www.silabs.com/products/sensors/humidity/si7006-13-20-21-34
+Si7020 Product Page: https://www.silabs.com/products/sensors/humidity/si7006-13-20-21-34
 
 BMP280: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf
 
