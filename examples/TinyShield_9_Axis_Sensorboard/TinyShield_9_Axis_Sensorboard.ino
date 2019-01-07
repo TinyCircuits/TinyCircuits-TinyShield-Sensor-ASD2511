@@ -1,19 +1,22 @@
-//-------------------------------------------------------------------------------
-//  TinyCircuits LSM9DS1 9 Axis TinyShield Example Sketch
-//  Last Updated 11 July 2016
-//  
-//  This demo is intended for the ASD2511 Sensor Board TinyShield with a LSM9DS1
-//  9 axis sensor populated. It shows basic use of a modified RTIMULib with the
-//  sensor.
-//
-//  This program now includes an EEPROM compatibility file for TinyScreen+.
-//  Using it will lock the last 16KB of flash for EEPROM emulation and prevent
-//  the bootloader from erasing or writing that section. This should not affect
-//  other programs unless they are trying to use the last 16KB of flash.
-//
-//  Modified by Ben Rose for TinyCircuits, https://tinycircuits.com
-//
-//-------------------------------------------------------------------------------
+/*
+  TinyCircuits LSM9DS1 9 Axis TinyShield Example Sketch
+  
+  This demo is intended for the ASD2511 Sensor Board TinyShield with a LSM9DS1
+  9 axis sensor populated. It shows basic use of a modified RTIMULib with the
+  sensor.
+  
+  This program now includes an EEPROM compatibility file for TinyScreen+.
+  Using it will lock the last 16KB of flash for EEPROM emulation and prevent
+  the bootloader from erasing or writing that section. This should not affect
+  other programs unless they are trying to use the last 16KB of flash.
+
+  Written 11 July 2016
+  By Ben Rose
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 ////////////////////////////////////////////////////////////////////////////
 //

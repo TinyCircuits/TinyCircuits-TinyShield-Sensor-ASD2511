@@ -1,17 +1,21 @@
-//-------------------------------------------------------------------------------
-//  TinyCircuits Si7020 Temperature and Humidity Sensor TinyShield Example Sketch
-//  Last Updated 20 March 2016
-//  
-//  This demo shows the bare minimum to read temperature and humidity data from 
-//  the Si7020 sensor using the Si7020 library written by Marcus Sorensen.
-//
-//  Written by Ben Rose for TinyCircuits, https://tinycircuits.com
-//
-//  This example is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2.1 of the License, or (at your option) any later version.
-//-------------------------------------------------------------------------------
+/*
+  TinyCircuits Si7020 Temperature and Humidity Sensor TinyShield Example Sketch
+  
+  This demo shows the bare minimum to read temperature and humidity data from 
+  the Si7020 sensor using the Si7020 library written by Marcus Sorensen.
+
+  This example is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  Written 20 March 2016
+  By Ben Rose
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 #include <Wire.h>
 #include <SI7021.h>

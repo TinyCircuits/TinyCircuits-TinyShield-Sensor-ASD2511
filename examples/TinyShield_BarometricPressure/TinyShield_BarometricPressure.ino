@@ -1,3 +1,16 @@
+/*
+  TinyDuino Barometric Pressure Demo
+  
+  This example code is in the public domain.
+
+  Written 
+  By 
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
+
 #include "BMP280.h"
 #include "Wire.h"
 #define P0 1013.25

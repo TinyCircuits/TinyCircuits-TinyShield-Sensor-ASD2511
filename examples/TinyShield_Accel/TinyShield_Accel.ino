@@ -1,13 +1,14 @@
 /*
-TinyDuino Accelerometer Demo
+  TinyDuino Accelerometer Demo
   
-Updated 15 August 2016 to use the correct serial monitor interface for
-TinyDuino or TinyScreen+
+  This example code is in the public domain.
 
-This example code is in the public domain.
+  Written 15 August 2016
+  By 
+  Modified 07 January 2019
+  By Hunter Hykes
 
-http://www.tinycircuits.com
-
+  https://TinyCircuits.com
 */
 
 
