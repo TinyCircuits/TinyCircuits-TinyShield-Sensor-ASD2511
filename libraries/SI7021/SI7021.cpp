@@ -102,8 +102,6 @@ void SI7021::_writeReg(byte * reg, int reglen) {
 
 int SI7021::_readReg(byte * reg, int reglen) {
     Wire.requestFrom(I2C_ADDR, reglen);
-    while(Wire.available() < reglen) {
-    }
     for(int i = 0; i < reglen; i++) { 
         reg[i] = Wire.read(); 
     }
