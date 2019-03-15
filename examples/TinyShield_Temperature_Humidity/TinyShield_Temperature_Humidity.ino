@@ -20,28 +20,34 @@
 #include <Wire.h>
 #include <SI7021.h>
 
+#if defined(ARDUINO_ARCH_SAMD)
+#define SerialMonitorInterface SerialUSB
+#else
+#define SerialMonitorInterface Serial
+#endif
+
 SI7021 sensor;
 
 void setup()
 {
-  Serial.begin(115200);
+  SerialMonitorInterface.begin(115200);
   Wire.begin();
-  Serial.print("Initializing sensor... ");
+  SerialMonitorInterface.print("Initializing sensor... ");
   if(!sensor.begin()){
-  	Serial.println("Sensor not found!");
+  	SerialMonitorInterface.println("Sensor not found!");
   	while(true);
   }
-  Serial.println("Success!");
+  SerialMonitorInterface.println("Success!");
 }
 
 void loop()
 {
   int celcius=sensor.getCelsiusHundredths()/100;
   int relativeHumidity=sensor.getHumidityPercent();
-  Serial.print(celcius);
-  Serial.print(" deg Celsius\t");
-  Serial.print(relativeHumidity);
-  Serial.println("% relative humidity");
+  SerialMonitorInterface.print(celcius);
+  SerialMonitorInterface.print(" deg Celsius\t");
+  SerialMonitorInterface.print(relativeHumidity);
+  SerialMonitorInterface.println("% relative humidity");
   
   delay(500);
 }

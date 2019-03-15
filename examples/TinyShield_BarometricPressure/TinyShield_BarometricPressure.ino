@@ -15,14 +15,21 @@
 #include "Wire.h"
 #define P0 1013.25
 BMP280 bmp;
+
+#if defined(ARDUINO_ARCH_SAMD)
+#define SerialMonitorInterface SerialUSB
+#else
+#define SerialMonitorInterface Serial
+#endif
+
 void setup()
 {
-  Serial.begin(9600);
+  SerialMonitorInterface.begin(9600);
   if(!bmp.begin()){
-    Serial.println("BMP init failed!");
+    SerialMonitorInterface.println("BMP init failed!");
     while(1);
   }
-  else Serial.println("BMP init success!");
+  else SerialMonitorInterface.println("BMP init success!");
   
   bmp.setOversampling(4);
   
@@ -40,17 +47,17 @@ void loop()
       {
         double A = bmp.altitude(P,P0);
         
-        Serial.print("T = \t");Serial.print(T,2); Serial.print(" degC\t");
-        Serial.print("P = \t");Serial.print(P,2); Serial.print(" mBar\t");
-        Serial.print("A = \t");Serial.print(A,2); Serial.println(" m");
+        SerialMonitorInterface.print("T = \t");SerialMonitorInterface.print(T,2); SerialMonitorInterface.print(" degC\t");
+        SerialMonitorInterface.print("P = \t");SerialMonitorInterface.print(P,2); SerialMonitorInterface.print(" mBar\t");
+        SerialMonitorInterface.print("A = \t");SerialMonitorInterface.print(A,2); SerialMonitorInterface.println(" m");
        
       }
       else {
-        Serial.println("Error.");
+        SerialMonitorInterface.println("Error.");
       }
   }
   else {
-    Serial.println("Error.");
+    SerialMonitorInterface.println("Error.");
   }
   
   delay(100);
