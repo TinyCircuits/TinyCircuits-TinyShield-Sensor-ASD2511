@@ -20,9 +20,9 @@ int x, y, z;
 double temp;
 
 #if defined(ARDUINO_ARCH_SAMD)
-#define SerialMonitorInterface SerialUSB
+ #define SerialMonitorInterface SerialUSB
 #else
-#define SerialMonitorInterface Serial
+ #define SerialMonitorInterface Serial
 #endif
 
 void setup() {
