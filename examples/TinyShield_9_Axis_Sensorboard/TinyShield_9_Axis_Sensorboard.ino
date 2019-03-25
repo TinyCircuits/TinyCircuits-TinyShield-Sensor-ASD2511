@@ -57,8 +57,8 @@ RTIMUSettings settings;                               // the settings object
 
 #define  SERIAL_PORT_SPEED  115200
 
-#ifdef SERIAL_PORT_MONITOR
-  #define SerialMonitor SERIAL_PORT_MONITOR
+#if defined(ARDUINO_ARCH_SAMD)
+  #define SerialMonitor SerialUSB
 #else
   #define SerialMonitor Serial
 #endif
