@@ -75,5 +75,3 @@ void showSerial() {
   SerialMonitorInterface.print("  Temperature(C) = ");
   SerialMonitorInterface.println(temp);
 }
-
-
