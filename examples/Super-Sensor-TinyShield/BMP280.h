@@ -5,6 +5,7 @@
 
 	Uses floating-point equations from BMP280 datasheet.
 
+	modified 20-04-2020 to solve problem with negative calibration data Willem A. Hol
 	modified by mhafuzul islam
 
 	version 1.01		 16/9/2014 initial version
@@ -70,8 +71,8 @@ class BMP280
 		char getTemperatureAndPressure(double& T,double& P);
 
 	private:
-	
-		char readInt(char address, int &value);
+//short instead of int in next line	20-04-2020
+		char readInt(char address, short &value);
 			// read an signed int (16 bits) from a BMP280 register
 			// address: BMP280 register address
 			// value: external signed int for returned value (16 bits)
@@ -98,8 +99,8 @@ class BMP280
 		char getUnPT(double &uP, double &uT);	
 			//get uncalibrated UP and UT value.
 	
-				
-		int dig_T2 , dig_T3 , dig_T4 , dig_P2 , dig_P3, dig_P4, dig_P5, dig_P6, dig_P7, dig_P8, dig_P9; 
+//short instead of int in next line  20-04-2020				
+		short dig_T2 , dig_T3 , dig_T4 , dig_P2 , dig_P3, dig_P4, dig_P5, dig_P6, dig_P7, dig_P8, dig_P9; 
 		unsigned int dig_P1,dig_T1 ;
 		short oversampling, oversampling_t;
 		long signed int t_fine;

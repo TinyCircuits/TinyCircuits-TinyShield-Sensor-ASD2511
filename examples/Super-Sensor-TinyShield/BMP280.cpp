@@ -6,6 +6,7 @@
 
 	Uses floating-point equations from BMP280 datasheet.
 
+	modified 20-04-2020 to solve problem with negative calibration data Willem A. Hol
 	modified by mhafuzul islam
 
 	version 1.01		 16/9/2014 initial version
@@ -14,7 +15,6 @@
 	you like with this code. No really, anything. If you find it useful,
 	buy me italian pizza someday.
 */
-
 #include "BMP280.h"
 #include <Wire.h>
 #include <stdio.h>
@@ -78,7 +78,8 @@ char BMP280::begin()
 **	@param : address = register to start reading (plus subsequent register)
 **	@param : value   = external variable to store data (function modifies value)
 */
-char BMP280::readInt(char address, int &value)
+//short instead of int in next line  20-04-2020
+char BMP280::readInt(char address, short &value)
 
 {
 	unsigned char data[2];	//char is 4bit,1byte
@@ -368,4 +369,3 @@ char BMP280::getError(void)
 {
 	return(error);
 }
-
